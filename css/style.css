@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Lato Black";
+  src: url(../fonts/Lato-Black.ttf);
+}
+.b-header {
+  position: relative;
+  height: 739px;
+  background: url("../img/header_bg.jpg");
+  background-repeat: no-repeat;
+}
+.b-headercontainer {
+  min-width: 1600px;
+}
+.b-headerTop__logo {
+  color: #ffffff;
+  font-size: 40px;
+}
+.b-headerTop__logo span {
+  color: #ffc61a;
+}
+.b-headerTop__logo_marginTop {
+  margin-top: 44px;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Lato Black", sans-serif;
+  background: #ffffff;
+}
+.wraper {
+  width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+@import "../packages/bootstrap-4.1.2/scss/bootstrap.scss";
+@font-face {
+  font-family: "Lato Black";
+  src: url(../fonts/Lato-Black.ttf);
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Lato Black", sans-serif;
+  color: #333333;
+  background: #1f1f1f;
+}
+.ww {
+  font-family: "Lato Black", sans-serif;
+  font-size: 30px;
+}
