@@ -1,8 +1,15 @@
 @import "_variables";
+@import "_respond";
+
 
 //Block section
 @import "block/_header.less";
 @import "block/_headerTop.less";
+@import "block/_headerMid.less";
+@import "block/_headerBottom.less";
+@import "block/_mainInfo.less";
+@import "block/_mainInfoContent.less";
+@import "block/_mainInfoForm.less";
 
 
 
@@ -15,8 +22,91 @@ body {
     background: @whiteColor;
 }
 
-.wraper {
+.container {
     width: 1600px;
     height: 100%;
     margin: 0 auto;
+}
+
+.headerTopWraper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-item {
+    border-radius: 50px;
+    transition-duration: .3s;
+    &:hover {
+        background-color: @majorColor;
+    }
+}
+.nav-link {
+    padding: .5rem 1.2rem;
+    color: @whiteColor;
+    text-transform: uppercase;
+    transition-duration: .3s;
+    &:hover {
+        color: @blackColor;
+    }
+  
+}
+
+.headerMidWraper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainInfoWraper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.formWraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid #e4e4e4;
+    border-radius: 0;
+    padding: 10px 0;
+}
+.form-row {
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.btn {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 35px;
+    font-stretch: ultra-condensed;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.btn-primary {
+    background-color: #131313;
+    width: 376px;
+    margin-bottom: 18px;
+
+}
+
+.formPreText {
+    background-color: @blackColor;
+    width: 100%;
+    height: 77px;
+    padding-top: 17px;
+    padding-left: 37px;
+    color: @whiteColor;
+    font-size: 34px;
+    text-transform: uppercase;
+    span {
+        color: @majorColor;
+    }
+
 }

@@ -2,14 +2,15 @@
   font-family: "Lato Black";
   src: url(../fonts/Lato-Black.ttf);
 }
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url(../fonts/Bebas Neue.ttf);
+}
 .b-header {
   position: relative;
   height: 739px;
   background: url("../img/header_bg.jpg");
   background-repeat: no-repeat;
-}
-.b-headercontainer {
-  min-width: 1600px;
 }
 .b-headerTop__logo {
   color: #ffffff;
@@ -18,8 +19,86 @@
 .b-headerTop__logo span {
   color: #ffc61a;
 }
-.b-headerTop__logo_marginTop {
+.b-headerTop__logo_marginLogo {
   margin-top: 44px;
+  margin-left: 81px;
+}
+.b-headerTop__slogan {
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.b-headerTop__slogan_margin {
+  margin-top: -15px;
+  margin-left: 19px;
+}
+.b-headerTop__menu_margin {
+  margin-top: 50px;
+  margin-right: 103px;
+}
+.b-headerMid__title {
+  color: #ffc61a;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.b-headerMid__title_marginTop {
+  margin-top: 20px;
+}
+.b-headerMid__phone {
+  color: #ffffff;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+.b-headerMid__www {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.b-headerMid__www_margin {
+  margin-left: 55px;
+}
+.b-headerBottom__carImg {
+  position: absolute;
+}
+.b-headerBottom__carImg_headerCar {
+  top: 370px;
+  left: 405px;
+  z-index: 500;
+}
+.b-mainInfo {
+  position: relative;
+  height: 742px;
+  background-color: #ffc61a;
+}
+.b-mainInfoContent_sizeM {
+  width: 554px;
+}
+.b-mainInfoContent__title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.b-mainInfoContent__title_marginTop {
+  margin-top: 151px;
+}
+.b-mainInfoContent__slogan {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.b-mainInfoContent__desc {
+  font-size: 18px;
+}
+.b-mainInfoForm {
+  position: relative;
+  background-color: #ffffff;
+}
+.b-mainInfoForm_sizeM {
+  width: 422px;
+}
+.b-mainInfoForm_marginTop {
+  margin-top: 155px;
 }
 html,
 body {
@@ -29,8 +108,81 @@ body {
   font-family: "Lato Black", sans-serif;
   background: #ffffff;
 }
-.wraper {
+.container {
   width: 1600px;
   height: 100%;
   margin: 0 auto;
+}
+.headerTopWraper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav-item {
+  border-radius: 50px;
+  transition-duration: .3s;
+}
+.nav-item:hover {
+  background-color: #ffc61a;
+}
+.nav-link {
+  padding: .5rem 1.2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition-duration: .3s;
+}
+.nav-link:hover {
+  color: #000000;
+}
+.headerMidWraper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.mainInfoWraper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 200px;
+}
+.formWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-control {
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  border-radius: 0;
+  padding: 10px 0;
+}
+.form-row {
+  margin-right: 35px;
+  margin-left: 35px;
+}
+.btn {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 35px;
+  font-stretch: ultra-condensed;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: #131313;
+  width: 376px;
+  margin-bottom: 18px;
+}
+.formPreText {
+  background-color: #000000;
+  width: 100%;
+  height: 77px;
+  padding-top: 17px;
+  padding-left: 37px;
+  color: #ffffff;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+.formPreText span {
+  color: #ffc61a;
 }
