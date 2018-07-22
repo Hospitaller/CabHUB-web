@@ -8,6 +8,11 @@
         &_marginLogo {
             margin-top: 44px;
             margin-left: 81px;
+            .customRespond(479px, 1599px, {
+                margin: 0;
+                margin-top: 15px;
+                text-align: center;
+            })
 
         }
     }
@@ -18,12 +23,20 @@
         &_margin {
             margin-top: -15px;
             margin-left: 19px;
+            .customRespond(479px, 1599px, {
+                margin-left: 0;
+            })
         }
     }
     &__menu {
         &_margin {
             margin-top: 50px;
             margin-right: 103px;
+            .customRespond(479px, 1599px, {
+                margin: 20px 0;
+                font-size: 25px;
+            })
         }
     }
+    
 }

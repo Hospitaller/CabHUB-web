@@ -23,6 +23,13 @@
   margin-top: 44px;
   margin-left: 81px;
 }
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-headerTop__logo_marginLogo {
+    margin: 0;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
 .b-headerTop__slogan {
   color: #ffffff;
   font-size: 15px;
@@ -32,9 +39,20 @@
   margin-top: -15px;
   margin-left: 19px;
 }
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-headerTop__slogan_margin {
+    margin-left: 0;
+  }
+}
 .b-headerTop__menu_margin {
   margin-top: 50px;
   margin-right: 103px;
+}
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-headerTop__menu_margin {
+    margin: 20px 0;
+    font-size: 25px;
+  }
 }
 .b-headerMid__title {
   color: #ffc61a;
@@ -45,10 +63,20 @@
 .b-headerMid__title_marginTop {
   margin-top: 20px;
 }
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-headerMid__title_marginTop {
+    margin-top: 0;
+  }
+}
 .b-headerMid__phone {
   color: #ffffff;
   font-size: 72px;
   text-transform: uppercase;
+}
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-headerMid__phone {
+    font-size: 50px;
+  }
 }
 .b-headerMid__www {
   color: #ffffff;
@@ -59,6 +87,12 @@
 .b-headerMid__www_margin {
   margin-left: 55px;
 }
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-headerMid__www_margin {
+    margin-left: 0;
+    font-size: 10px;
+  }
+}
 .b-headerBottom__carImg {
   position: absolute;
 }
@@ -67,6 +101,11 @@
   left: 405px;
   z-index: 500;
 }
+@media all and (min-width: 0px) and (max-width: 1400px) {
+  .b-headerBottom__carImg_headerCar {
+    display: none;
+  }
+}
 .b-mainInfo {
   position: relative;
   height: 742px;
@@ -74,6 +113,11 @@
 }
 .b-mainInfoContent_sizeM {
   width: 554px;
+}
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .b-mainInfoContent_sizeM {
+    width: 100%;
+  }
 }
 .b-mainInfoContent__title {
   font-size: 25px;
@@ -109,14 +153,30 @@ body {
   background: #ffffff;
 }
 .container {
-  width: 1600px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
+}
+@media all and (min-width: 1441px) {
+  .container {
+    min-width: 1600px;
+  }
 }
 .headerTopWraper {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .headerTopWraper {
+    flex-direction: column;
+  }
+}
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .nav {
+    display: block;
+    text-align: center;
+  }
 }
 .nav-item {
   border-radius: 50px;
@@ -145,6 +205,12 @@ body {
   width: 100%;
   justify-content: space-between;
   margin: 0 200px;
+}
+@media all and (min-width: 479px) and (max-width: 1599px) {
+  .mainInfoWraper {
+    flex-direction: column;
+    margin: 0 15px;
+  }
 }
 .formWraper {
   display: flex;
