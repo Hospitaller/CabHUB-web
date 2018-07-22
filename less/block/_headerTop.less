@@ -8,7 +8,18 @@
         &_marginLogo {
             margin-top: 44px;
             margin-left: 81px;
-            .customRespond(479px, 1599px, {
+            .customRespond(479px, 1026px, {
+                margin: 0;
+                margin-top: 15px;
+                text-align: center;
+            });
+            
+/*             .respondTo(small-desktops, {
+                margin-left: 15px;
+                margin-top: 15px;
+                text-align: center;
+            }); */
+            .respondToDown(phones, {
                 margin: 0;
                 margin-top: 15px;
                 text-align: center;
@@ -23,7 +34,10 @@
         &_margin {
             margin-top: -15px;
             margin-left: 19px;
-            .customRespond(479px, 1599px, {
+            .customRespond(479px,1026px, {
+                margin-left: 0;
+            });
+            .respondToDown(phones, {
                 margin-left: 0;
             })
         }
@@ -32,10 +46,14 @@
         &_margin {
             margin-top: 50px;
             margin-right: 103px;
-            .customRespond(479px, 1599px, {
-                margin: 20px 0;
+            .customRespond(0px, 992px, {
+                margin: 50px 0;
                 font-size: 25px;
-            })
+            });
+            .customRespond(993px, 1026px, {
+                margin: 50px 0;
+                font-size: 25px;
+            });
         }
     }
     

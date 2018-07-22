@@ -6,7 +6,10 @@
         text-transform: uppercase;
         &_marginTop {
             margin-top: 20px;
-            .customRespond(479px, 1599px, {
+            .customRespond(479px, 1026px, {
+                margin-top: 0;
+            });
+            .respondToDown(phones, {
                 margin-top: 0;
             })
         }
@@ -15,7 +18,10 @@
         color: @whiteColor;
         font-size: 72px;
         text-transform: uppercase;
-        .customRespond(479px, 1599px, {
+        .customRespond(479px, 1026px, {
+            font-size: 50px;
+        });
+        .respondToDown(phones, {
             font-size: 50px;
         })
 
@@ -28,10 +34,19 @@
         
         &_margin {
             margin-left: 55px;
-            .customRespond(479px, 1599px, {
+            .customRespond(479px, 1026px, {
                 margin-left: 0;
                 font-size: 10px;
-            })
+            });
+            .respondToDown(phones, {
+                margin-left: 0;
+                font-size: 10px;
+            });
+            .respondTo(small-desktops, {
+                margin-bottom: 380px;
+                letter-spacing: 10px;
+            });
+
 
         }
     }

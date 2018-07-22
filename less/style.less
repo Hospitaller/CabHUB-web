@@ -23,30 +23,42 @@ body {
 }
 
 .container {
-    width: 100%;
+    max-width: 1600px;
     height: 100%;
     margin: 0 auto;
-    .respondToUp(xlg-desktops, {
-        min-width: 1600px;
-    } )
+    .customRespond(1400px, 1600px, {
+        min-width: 100%;
+    });
+    .respondToDown(phones, {
+        min-width: 479px;
+    })
 }
 
 .headerTopWraper {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    .customRespond(479px, 1599px, {
+    .customRespond(479px, 1026px, {
+        flex-direction: column;
+    });
+    .respondToDown(phones, {
         flex-direction: column;
     })
 }
 .nav {
-
-    .customRespond(479px, 1599px, {
+    &.justify-content-end {
+        justify-content: center!important;
+    }
+    .customRespond(0px, 767px, {
         display: block;
         text-align: center;
+    });
+    .respondTo(tablets, {
+        display: flex;
     })
 
 }
+
 .nav-item {
     border-radius: 50px;
     transition-duration: .3s;
@@ -62,6 +74,9 @@ body {
     &:hover {
         color: @blackColor;
     }
+    .respondTo(tablets, {
+        padding: .8rem 1.2rem;
+    })
   
 }
 
@@ -78,9 +93,15 @@ body {
     width: 100%;
     justify-content: space-between;
     margin: 0 200px;
-    .customRespond(479px, 1599px, {
+    .customRespond(479px, 1199px, {
         flex-direction: column;
         margin: 0 15px;
+        align-items: center;
+    });
+    .respondToDown(phones, {
+        flex-direction: column;
+        margin: 0 15px;
+        align-items: center;
     })
 }
 
@@ -88,6 +109,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .btn {
+        font-family: 'Six Caps', sans-serif;
+        font-size: 35px;
+        font-stretch: ultra-condensed;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .btn-primary {
+        background-color: #131313;
+        width: 376px;
+        margin-bottom: 18px;
+    
+    }
 }
 
 .form-control {
@@ -100,19 +134,8 @@ body {
     margin-right: 35px;
     margin-left: 35px;
 }
-.btn {
-    font-family: 'Six Caps', sans-serif;
-    font-size: 35px;
-    font-stretch: ultra-condensed;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-.btn-primary {
-    background-color: #131313;
-    width: 376px;
-    margin-bottom: 18px;
 
-}
+
 
 .formPreText {
     background-color: @blackColor;
@@ -128,3 +151,4 @@ body {
     }
 
 }
+
