@@ -10,6 +10,7 @@
 @import "block/_mainInfo.less";
 @import "block/_mainInfoContent.less";
 @import "block/_mainInfoForm.less";
+@import "block/_tariffs.less";
 
 
 
@@ -115,6 +116,7 @@ body {
         font-stretch: ultra-condensed;
         letter-spacing: 3px;
         text-transform: uppercase;
+        border-color: @blackColor;
     }
     .btn-primary {
         background-color: #131313;
@@ -152,3 +154,62 @@ body {
 
 }
 
+.tariffsWraper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 50px;
+    & :nth-child(2) {
+        margin: 0;
+    }
+    .customRespond(0px, 1199px, {
+        flex-direction: column;
+        margin: 0;
+    });
+}
+
+.tariffsContentWraper {
+    height: 100%;
+    padding: 0 35px 39px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .customRespond(0px, 1199px, {
+        padding: 0;
+    });
+    .btn {
+        font-family: @mainFont;
+        font-size: 22px;
+        font-stretch: ultra-condensed;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        border-color: @majorColor;
+        color: @blackColor;
+    }
+    .btn-primary {
+        background-color: @majorColor;
+        width: 166px;
+        height: 50px;
+    }
+}
+.tariffsStarWraper {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: -50px;
+    margin-right: -70px;
+    .customRespond(479px, 1199px, {
+        margin-bottom: 11px;
+        margin-right: 0;
+    })
+    
+    
+} 
+.tariffsStar {
+width: 74px;
+height: 74px;
+    background-image: url("../img/tarifsStar.png");
+    background-repeat: no-repeat;
+    
+}
