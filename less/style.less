@@ -11,6 +11,9 @@
 @import "block/_mainInfoContent.less";
 @import "block/_mainInfoForm.less";
 @import "block/_tariffs.less";
+@import "block/_reason.less";
+@import "block/_reasonName.less";
+@import "block/_reasonUnit.less";
 
 
 
@@ -212,4 +215,31 @@ height: 74px;
     background-image: url("../img/tarifsStar.png");
     background-repeat: no-repeat;
     
+}
+
+.reasonWraper {
+    height: 753px;
+    width: 100%;
+    background-image: url("../img/reason_bg.png");
+    background-repeat: no-repeat;
+}
+
+.reasonNameWraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.reasonRowWraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reasonUnitWraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
