@@ -14,6 +14,9 @@
 @import "block/_reason.less";
 @import "block/_reasonName.less";
 @import "block/_reasonUnit.less";
+@import "block/_download.less";
+@import "block/_downloadName.less";
+@import "block/_downloadContent.less";
 
 
 
@@ -222,6 +225,9 @@ height: 74px;
     width: 100%;
     background-image: url("../img/reason_bg.png");
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reasonNameWraper {
@@ -242,4 +248,40 @@ height: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.downloadWraper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 65px;
+}
+.downloadNameWraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.downloadContentWraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+.downloadContentTextWraper {
+    width: 440px;
+}
+
+.downloadButtonWraper {
+    display: flex;
+}
+
+.downloadHand {
+    width: 388px;
+    height: 466px;
+    background-image: url(/img/hand.png);
+    background-repeat: no-repeat;
 }
