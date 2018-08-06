@@ -17,6 +17,10 @@
 @import "block/_download.less";
 @import "block/_downloadName.less";
 @import "block/_downloadContent.less";
+@import "block/_testimonialsName.less";
+@import "block/_testimonialsUnit.less";
+@import "block/_callback.less";
+@import "block/_footerUnit.less";
 
 
 
@@ -317,4 +321,102 @@ height: 74px;
         display: none;
      })
 
+}
+
+.testimonialsWraper {
+    width: 100%;
+    height: 610px;
+    background-image: url(/img/testimonials.png);
+    background-repeat: no-repeat;
+}
+.testimonialsNameWraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonialsContentWraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonialsUnitWraper {
+    padding: 42px;
+    width: 581px;
+    height: 220px;
+    background-color: @blackColor;
+    border-radius: 50px;
+}
+.testimonialsUnitImg {
+    width: 74px;
+    height: 74px;
+    background-image: url(/img/author.png);
+    background-repeat: no-repeat;
+}
+
+.callbackWraper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 286px;
+    background-color: @majorColor;
+}
+
+.footerUnitWraper {
+    padding-top: 86px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 440px;
+    background-image: url(/img/footer.png);
+}
+
+.unitWraper {
+    width: 339px;
+}
+.innerWraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+}
+
+.footerSocial {
+    color: @majorColor;
+    & i {
+        margin-left: 30px;
+    }
+}
+
+.systemName {
+    color: @majorColor;
+    & i {
+        color: @whiteColor;
+        margin-left: 10px;
+    }
+}
+.address i,
+.phone i,
+.email i,
+.site i {
+    margin-right: 10px;
+}
+
+.copyright {
+    background-color: @blackColor;
+    
+}
+.copyrightWraper {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @whiteColor;
+    font-size: 14px;
 }
