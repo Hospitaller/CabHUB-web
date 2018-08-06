@@ -1,23 +1,29 @@
 .b-footerUnit {
+    
     &__name {
         font-size: 25px;
         text-transform: uppercase;
         color: @whiteColor;
     }
+
     &__line {
         background-color: @majorColor;
+
         &_size {
             width: 339px;
             height: 8px;
+
             &_margin {
                 margin: 40px 0;
+                .customRespond(479px, 1200px, {
+                    margin: 10px 0;
+                 })
             }
         }
-        
     }
+
     &__text {
         color: @whiteColor;
         font-size: 16px;
     }
-   
 }

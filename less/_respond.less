@@ -1,16 +1,3 @@
-@xxsFrom: 0;
-@xxsTo: 479px;
-@xsFrom: 480px;
-@xsTo: 767px;
-@smFrom: 768px;
-@smTo: 991px;
-@mdFrom: 992px;
-@mdTo: 1199px;
-@lgFrom: 1200px;
-@lgTo: 1440px;
-@xlgFrom: 1441px;
-@xlgTo: 1920px;
-
 .respondTo(@device, @content) {
     & when (@device = phones) {
       @media all and (max-width: 479px) { @content(); }

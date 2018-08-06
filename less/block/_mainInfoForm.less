@@ -1,19 +1,21 @@
 .b-mainInfoForm {
+
     position: relative;
     background-color: @whiteColor;
+
         &_sizeM {
             width: 422px;
             .respondTo(tablets, {
                 width: 100%;
             })
         }
+
         &_marginBottom {
             margin-bottom: 20px;
         }
+
         &_marginTop {
             margin-top:155px;
-            
-           
             .customRespond(1200px, 1600px, {
                 margin-left: 30px;
             });
@@ -25,5 +27,4 @@
                 margin-top: 20px;
             })
         }
-
 }

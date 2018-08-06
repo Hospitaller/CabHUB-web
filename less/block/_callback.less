@@ -1,12 +1,23 @@
 .b-callback {
+    
     &__title {
         color: @blackColor;
         font-size: 35px;
         text-transform: uppercase;
+        .customRespond(0px, 515px, {
+            font-size: 35px;
+         })
     }
+    
     &__phone {
         color: @blackColor;
         font-size: 77px;
         text-transform: uppercase;
+        .customRespond(516px, 605px, {
+            font-size: 65px;
+         });
+         .customRespond(0px, 515px, {
+            font-size: 55px;
+         })
     }
 }
