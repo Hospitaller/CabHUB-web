@@ -132,6 +132,13 @@ body {
         width: 376px;
         margin-bottom: 18px;
     }
+    .btn-primary:focus {
+        box-shadow: none;
+    }
+    .btn-primary:hover {
+        background-color: @hoverColor;
+        border-color: @hoverColor;
+    }
 }
 
 .form-control {
@@ -139,6 +146,9 @@ body {
     border-bottom: 2px solid #e4e4e4;
     border-radius: 0;
     padding: 10px 0;
+}
+.form-control:focus {
+    box-shadow: none;
 }
 
 .form-row {
@@ -197,6 +207,13 @@ body {
         background-color: @majorColor;
         width: 166px;
         height: 50px;
+    }
+    .btn-primary:focus {
+        box-shadow: none;
+    }
+    .btn-primary:hover {
+        background-color: @hoverColor;
+        border-color: @hoverColor;
     }
 }
 
@@ -411,6 +428,10 @@ body {
     color: @majorColor;
     & i {
         margin-left: 30px;
+        cursor: pointer;
+    }
+    & i:hover {
+        transform: scale(1.25);
     }
 }
 
