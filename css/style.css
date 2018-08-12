@@ -801,6 +801,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 50px;
 }
 @media all and (min-width: 0px) and (max-width: 1199px) {
   .reasonWraper {
@@ -969,6 +970,7 @@ body {
     flex-direction: column;
     height: 100%;
     padding-top: 5px;
+    background-size: cover;
   }
 }
 .unitWraper {
