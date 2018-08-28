@@ -1,13 +1,11 @@
 .b-tariffs {
     position: relative;
     height: 100%;
-    
     &__unit {
         background-color: @lightGreyColor;
         &_sizing {
             width: 373px;
             height: 480px;
-            
         }
         &:hover {
             cursor: pointer;
@@ -15,7 +13,8 @@
             .b-tariffs__prise_margin {
                 color: @blackColor;
             }
-            .tariffsContentWraper .btn, .btn-primary {
+            .tariffsContentWraper .btn,
+            .btn-primary {
                 background-color: @blackColor;
                 border-color: @blackColor;
                 color: @whiteColor;
@@ -27,8 +26,8 @@
                 .tariffsStarWraper {
                     display: none;
                 }
-                
-            })
+            }
+            )
         }
         &_marginTop {
             margin-top: 261px;
@@ -36,7 +35,8 @@
                 width: 100%;
                 margin-top: 75px;
                 text-align: center;
-            })
+            }
+            )
         }
     }
     &__img {
@@ -47,14 +47,16 @@
             .customRespond(479px, 1199px, {
                 top: 0;
                 margin-bottom: 0;
-            })
+            }
+            )
         }
     }
     &__title {
         font-size: 30px;
         .customRespond(479px, 1199px, {
             margin: 10px;
-        })
+        }
+        )
     }
     &__desc {
         font-size: 18px;

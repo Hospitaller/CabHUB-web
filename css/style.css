@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Lato Black";
-  src: url(../fonts/Lato-Black.ttf);
+  src: url("../fonts/Lato-Black.ttf");
 }
 @font-face {
   font-family: "Bebas Neue Bold";
-  src: url(../fonts/Bebas Neue.ttf);
+  src: url("../fonts/Bebas Neue.ttf");
 }
 .b-header {
   position: relative;
@@ -30,11 +30,6 @@
 .b-headerTop__logo_marginLogo {
   margin-top: 44px;
   margin-left: 81px;
-  /*             .respondTo(small-desktops, {
-                margin-left: 15px;
-                margin-top: 15px;
-                text-align: center;
-            }); */
 }
 @media all and (min-width: 479px) and (max-width: 1026px) {
   .b-headerTop__logo_marginLogo {
@@ -356,28 +351,28 @@
   text-transform: uppercase;
 }
 .b-reasonUnit__logo_img_1 {
-  background-image: url("/img/reason1.png");
+  background-image: url("../img/reason1.png");
   background-repeat: no-repeat;
   width: 100px;
   height: 81px;
   margin-right: 10px;
 }
 .b-reasonUnit__logo_img_2 {
-  background-image: url("/img/reason2.png");
+  background-image: url("../img/reason2.png");
   background-repeat: no-repeat;
   width: 100px;
   height: 81px;
   margin-right: 10px;
 }
 .b-reasonUnit__logo_img_3 {
-  background-image: url("/img/reason3.png");
+  background-image: url("../img/reason3.png");
   background-repeat: no-repeat;
   width: 100px;
   height: 81px;
   margin-right: 10px;
 }
 .b-reasonUnit__logo_img_4 {
-  background-image: url("/img/reason4.png");
+  background-image: url("../img/reason4.png");
   background-repeat: no-repeat;
   width: 100px;
   height: 81px;
@@ -417,7 +412,7 @@
   width: 180px;
   height: 63px;
   border-radius: 35px;
-  background-image: url("/img/gplay.png");
+  background-image: url("../img/gplay.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -438,7 +433,7 @@
   width: 180px;
   height: 63px;
   border-radius: 35px;
-  background-image: url("/img/appstore.png");
+  background-image: url("../img/appstore.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -508,7 +503,7 @@ body {
   }
 }
 .nav.justify-content-end {
-  justify-content: center!important;
+  justify-content: center !important;
 }
 @media all and (min-width: 0px) and (max-width: 767px) {
   .nav {
@@ -764,7 +759,7 @@ body {
 .downloadHand {
   width: 388px;
   height: 466px;
-  background-image: url(/img/hand.png);
+  background-image: url("../img/hand.png");
   background-repeat: no-repeat;
 }
 @media all and (min-width: 0px) and (max-width: 479px) {

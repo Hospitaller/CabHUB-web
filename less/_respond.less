@@ -11,68 +11,108 @@
 @xlgFrom: 1441px;
 @xlgTo: 1920px;
 
+
 .respondTo(@device, @content) {
-    & when (@device = phones) {
-      @media all and (max-width: 479px) { @content(); }
+    & when (@device =phones) {
+        @media all and (max-width: 479px) {
+            @content();
+        }
     }
-    & when (@device = wide-phones) {
-      @media all and (min-width: 480px) and (max-width: 767px) { @content(); }
+    & when (@device =wide-phones) {
+        @media all and (min-width: 480px) and (max-width: 767px) {
+            @content();
+        }
     }
-    & when (@device = tablets) {
-      @media all and (min-width: 768px) and (max-width: 991px) { @content(); }
+    & when (@device =tablets) {
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @content();
+        }
     }
-    & when (@device = small-desktops) {
-      @media all and (min-width: 992px) and (max-width: 1199px) { @content(); }
+    & when (@device =small-desktops) {
+        @media all and (min-width: 992px) and (max-width: 1199px) {
+            @content();
+        }
     }
-    & when (@device = lg-desktops) {
-      @media all and (min-width: 1200px) and (max-width: 1440px) { @content(); }
+    & when (@device =lg-desktops) {
+        @media all and (min-width: 1200px) and (max-width: 1440px) {
+            @content();
+        }
     }
-    & when (@device = xlg-desktops) {
-      @media all and (min-width: 1441px) and (max-width: 1920px) { @content(); }
+    & when (@device =xlg-desktops) {
+        @media all and (min-width: 1441px) and (max-width: 1920px) {
+            @content();
+        }
     }
-  }
-  .respondToDown(@device, @content) {
-    & when (@device = phones) {
-      @media all and (max-width: 479px) { @content(); }
+}
+
+.respondToDown(@device, @content) {
+    & when (@device =phones) {
+        @media all and (max-width: 479px) {
+            @content();
+        }
     }
-    & when (@device = wide-phones) {
-      @media all and (max-width: 480px) { @content(); }
+    & when (@device =wide-phones) {
+        @media all and (max-width: 480px) {
+            @content();
+        }
     }
-    & when (@device = tablets) {
-      @media all and (max-width: 768px) { @content(); }
+    & when (@device =tablets) {
+        @media all and (max-width: 768px) {
+            @content();
+        }
     }
-    & when (@device = small-desktops) {
-      @media all and (max-width: 992px) { @content(); }
+    & when (@device =small-desktops) {
+        @media all and (max-width: 992px) {
+            @content();
+        }
     }
-    & when (@device = lg-desktops) {
-      @media all and (max-width: 1200px) { @content(); }
+    & when (@device =lg-desktops) {
+        @media all and (max-width: 1200px) {
+            @content();
+        }
     }
-    & when (@device = xlg-desktops) {
-      @media all and (max-width: 1441px) { @content(); }
+    & when (@device =xlg-desktops) {
+        @media all and (max-width: 1441px) {
+            @content();
+        }
     }
-  }
-  .respondToUp(@device, @content) {
-    & when (@device = phones) {
-      @media all and (min-width: 479px) { @content(); }
+}
+
+.respondToUp(@device, @content) {
+    & when (@device =phones) {
+        @media all and (min-width: 479px) {
+            @content();
+        }
     }
-    & when (@device = wide-phones) {
-      @media all and (min-width: 480px) { @content(); }
+    & when (@device =wide-phones) {
+        @media all and (min-width: 480px) {
+            @content();
+        }
     }
-    & when (@device = tablets) {
-      @media all and (min-width: 768px) { @content(); }
+    & when (@device =tablets) {
+        @media all and (min-width: 768px) {
+            @content();
+        }
     }
-    & when (@device = small-desktops) {
-      @media all and (min-width: 992px) { @content(); }
+    & when (@device =small-desktops) {
+        @media all and (min-width: 992px) {
+            @content();
+        }
     }
-    & when (@device = lg-desktops) {
-      @media all and (min-width: 1200px) { @content(); }
+    & when (@device =lg-desktops) {
+        @media all and (min-width: 1200px) {
+            @content();
+        }
     }
-    & when (@device = xlg-desktops) {
-      @media all and (min-width: 1441px) { @content(); }
+    & when (@device =xlg-desktops) {
+        @media all and (min-width: 1441px) {
+            @content();
+        }
     }
-  }
-  
-  
-  .customRespond(@minWidth, @maxWidth, @content) {
-    @media all and (min-width: @minWidth) and (max-width: @maxWidth) { @content(); }
-  }
+}
+
+.customRespond(@minWidth, @maxWidth, @content) {
+    @media all and (min-width: @minWidth) and (max-width: @maxWidth) {
+        @content();
+    }
+}
