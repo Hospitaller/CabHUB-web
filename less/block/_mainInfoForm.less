@@ -1,6 +1,8 @@
 .b-mainInfoForm {
+
     position: relative;
     background-color: @whiteColor;
+<<<<<<< HEAD
     &_sizeM {
         width: 422px;
         .respondTo(tablets, {
@@ -27,4 +29,31 @@
         }
         )
     }
+=======
+
+        &_sizeM {
+            width: 422px;
+            .respondTo(tablets, {
+                width: 100%;
+            })
+        }
+
+        &_marginBottom {
+            margin-bottom: 20px;
+        }
+
+        &_marginTop {
+            margin-top:155px;
+            .customRespond(1200px, 1600px, {
+                margin-left: 30px;
+            });
+            .customRespond(479px, 1199px, {
+                width: 100%;
+                margin-top: 20px;
+            });
+            .customRespond(0px, 478px, {
+                margin-top: 20px;
+            })
+        }
+>>>>>>> origin/master
 }

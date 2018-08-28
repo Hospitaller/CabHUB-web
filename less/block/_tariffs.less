@@ -1,4 +1,5 @@
 .b-tariffs {
+
     position: relative;
     height: 100%;
     &__unit {
@@ -7,28 +8,41 @@
             width: 373px;
             height: 480px;
         }
+
         &:hover {
             cursor: pointer;
             background-color: @majorColor;
             .b-tariffs__prise_margin {
                 color: @blackColor;
             }
+<<<<<<< HEAD
             .tariffsContentWraper .btn,
             .btn-primary {
+=======
+
+            .tariffsContentWraper .btn, .btn-primary {
+>>>>>>> origin/master
                 background-color: @blackColor;
                 border-color: @blackColor;
                 color: @whiteColor;
             }
+
             .tariffsStarWraper {
                 display: flex;
             }
+
             .customRespond(0px, 807px, {
                 .tariffsStarWraper {
                     display: none;
                 }
+<<<<<<< HEAD
             }
             )
+=======
+            })
+>>>>>>> origin/master
         }
+
         &_marginTop {
             margin-top: 261px;
             .customRespond(0px, 1199px, {
@@ -39,6 +53,7 @@
             )
         }
     }
+
     &__img {
         position: relative;
         &_tariffsCar {
@@ -51,6 +66,7 @@
             )
         }
     }
+
     &__title {
         font-size: 30px;
         .customRespond(479px, 1199px, {
@@ -58,12 +74,14 @@
         }
         )
     }
+
     &__desc {
         font-size: 18px;
         &_margin {
             margin: 10px 0;
         }
     }
+    
     &__prise {
         font-size: 44px;
         color: @majorColor;

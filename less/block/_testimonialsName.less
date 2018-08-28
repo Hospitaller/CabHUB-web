@@ -1,0 +1,28 @@
+.b-testimonialsName {
+
+    &__title {
+        font-size: 35px;
+        text-transform: uppercase;
+        color: @majorColor;
+
+        &_margin {
+            margin-top: 110px;
+            .customRespond(0px, 1200px, {
+                margin-top: 20px;
+             })
+        }
+    }
+
+    &__text {
+        font-size: 44px;
+        text-transform: uppercase;
+        color: @whiteColor;
+        
+        &_margin {
+            margin-bottom: 81px;
+            .customRespond(0px, 1200px, {
+                margin-bottom: 0;
+             })
+        }
+    }
+}
