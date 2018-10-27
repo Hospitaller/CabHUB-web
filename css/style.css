@@ -575,6 +575,9 @@
   color: #ffffff;
   font-size: 16px;
 }
+figure {
+  margin: 0;
+}
 html,
 body {
   min-height: 100%;
